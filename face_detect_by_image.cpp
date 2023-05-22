@@ -1,21 +1,6 @@
 
 #include "face_detect_by_video.cpp"
 
-// typedef struct image{
-//     GstElement *pipeline, *filesrc, *decodebin, *videoconvert,
-//                *facedetect, *videoconvert2, *imagefreez, *autovideosink;
-//     GstBus *bus;
-// 	GstMessage *msg;
-// 	GstStateChangeReturn ret;
-// 	gboolean terminate = FALSE;
-// } image;
-
-// static void handle_pads(GstElement *src, GstPad *pad, GstElement *des) {
-// 	GstPad *sink = gst_element_get_static_pad(des, "sink");
-// 	gst_pad_link(pad, sink);
-// 	gst_object_unref(sink);
-// }
-
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 void face_detect_by_image(){

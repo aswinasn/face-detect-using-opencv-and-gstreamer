@@ -22,16 +22,16 @@ typedef struct video{
 
 } video;
 
-// // gst elements for image -------------------------------------
+// gst elements for image -------------------------------------
 
-// typedef struct image{
-//     GstElement *pipeline, *filesrc, *decodebin, *videoconvert,
-//                *facedetect, *videoconvert2, *imagefreez, *autovideosink;
-//     GstBus *bus;
-// 	GstMessage *msg;
-// 	GstStateChangeReturn ret;
-// 	gboolean terminate = FALSE;
-// } image;
+typedef struct image{
+    GstElement *pipeline, *filesrc, *decodebin, *videoconvert,
+               *facedetect, *videoconvert2, *imagefreez, *autovideosink;
+    GstBus *bus;
+	GstMessage *msg;
+	GstStateChangeReturn ret;
+	gboolean terminate = FALSE;
+} image;
 
 // pad handler -----------------------------------------------
 
