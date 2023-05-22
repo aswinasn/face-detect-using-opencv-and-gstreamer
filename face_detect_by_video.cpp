@@ -1,24 +1,6 @@
 
 #include "elements.cpp"
 
-////// gst elements for video ----------------------------------
-
-// typedef struct video{
-// 	GstElement *pipeline, *filesrc, *decodebin, *videoconvert,
-//                *facedetect, *videoconvert2, *autovideosink;
-//     GstBus *bus;
-// 	GstMessage *msg;
-// 	GstStateChangeReturn ret;
-// 	gboolean terminate = FALSE;
-
-// } video;
-
-// static void handle_pads(GstElement *src, GstPad *pad, GstElement *des) {
-// 	GstPad *sink = gst_element_get_static_pad(des, "sink");
-// 	gst_pad_link(pad, sink);
-// 	gst_object_unref(sink);
-// }
-
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 void face_detect_by_video(){
