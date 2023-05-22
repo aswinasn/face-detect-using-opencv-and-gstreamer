@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/opencv4/**",
+                "/home/ee213104/opencv/include/**",
+                "/usr/local/include/opencv4/**",
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+                "/usr/include/glib-2.0",
+                "/usr/lib/x86_64-linux-gnu/gstreamer-1.0/include/",
+                "/usr/include/gstreamer-1.0",
+                "/usr/include/gio-unix-2.0",
+                "/usr/include/cairo",
+                "/usr/include/pango-1.0",
+                "/usr/include/harfbuzz",
+                "/usr/include/atk-1.0",
+                "/usr/include/pixman-1",
+                "/usr/include/uuid",
+                "/usr/include/freetype2",
+                "/usr/include/gdk-pixbuf-2.0",
+                "/home/ee213104/opencv/include",
+                "/usr/include/gstreamer-1.0",
+                "/usr/include/glib-2.0",
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+                "${workspaceFolder}/.vscode"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
