@@ -16,7 +16,7 @@ void face_detect_by_video(){
 	double fps = cap.get(CAP_PROP_FPS);  /// getting teh frame rate------------------------- 
 
     // Get video properties ----------------------------------------------------------------
-	VideoWriter output("/home/ee213104/Desktop/video_rec.mp4", VideoWriter::fourcc('M', 'J', 'P', 'G'), fps, Size(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT)));
+	VideoWriter output("/home/ee213104/Desktop/face_detection_project/video_rec.mp4", VideoWriter::fourcc('M', 'J', 'P', 'G'), fps, Size(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT)));
 
     Mat frame;
 
@@ -46,7 +46,7 @@ void face_detect_by_video(){
     v.pipeline = gst_pipeline_new("mp4-player");
 
     v.filesrc = gst_element_factory_make("filesrc", NULL);
-    g_object_set(G_OBJECT(v.filesrc), "location", "/home/ee213104/Desktop/video_rec.mp4", NULL);
+    g_object_set(G_OBJECT(v.filesrc), "location", "/home/ee213104/Desktop/face_detection_project/video_rec.mp4", NULL);
 
     // v.decodebin = gst_element_factory_make("decodebin", NULL);
     v.decodebin = gst_element_factory_make("decodebin", NULL);
