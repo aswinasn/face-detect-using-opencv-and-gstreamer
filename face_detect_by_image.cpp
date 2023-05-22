@@ -24,7 +24,7 @@ void face_detect_by_image(){
 
         if(waitKey(25) == 'q'){
 
-            imwrite("/home/ee213104/Desktop/image_rec.png", frame); /// writing frames in to file ---------------------------------
+            imwrite("/home/ee213104/Desktop/face_detection_project/image_rec.png", frame); /// writing frames in to file ---------------------------------
             break;
         }
         //waitKey(40);
@@ -39,7 +39,7 @@ void face_detect_by_image(){
 
     // creating elements -------------------------------------------
     i.filesrc = gst_element_factory_make("filesrc", NULL);
-    g_object_set(G_OBJECT(i.filesrc), "location", "/home/ee213104/Desktop/image_rec.png", NULL);
+    g_object_set(G_OBJECT(i.filesrc), "location", "/home/ee213104/Desktop/face_detection_project/image_rec.png", NULL);
 
     i.decodebin = gst_element_factory_make("decodebin", NULL);
     i.videoconvert = gst_element_factory_make("videoconvert", NULL);
